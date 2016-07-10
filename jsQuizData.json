@@ -1,0 +1,152 @@
+{
+  "Q":[
+    {
+      "question": "Inside which HTML element do we put the JavaScript?",
+      "ans1":"&#60;script&#62;",
+      "ans2":"&#60;javascript&#62;",
+      "ans3":"&#60;scripting&#62;",
+      "ans4":"&#60;js&#62;",
+      "rightAns":"1"
+    },{
+      "question": "Where is the correct place to insert a JavaScript?",
+      "ans1":"The &#60;head&#62; section",
+      "ans2":"Both the &#60;head&#62; section and the &#60;body&#62; section are correct",
+      "ans3":"The &#60;body&#62; section",
+      "ans4":"The &#60;link&#62; section",
+      "rightAns":"2"
+    },{
+      "question": "What is the correct syntax for referring to an external script called 'xxx.js'?",
+      "ans1":"&#60;script name='xxx.js'&#62;",
+      "ans2":"&#60;script href='xxx.js'&#62;",
+      "ans3":"'&#60;script src='xxx.js'&#62;'",
+      "ans4":"&#60;link src='xxx.js'&#62;",
+      "rightAns":"3"
+    },{
+      "question": "How do you write 'Hello World' in an alert box?",
+      "ans1":"msgBox('Hello World');",
+      "ans2":"msg('Hello World');",
+      "ans3":"alertBox('Hello World');",
+      "ans4":"alert('Hello World');",
+      "rightAns":"4"
+    },{
+      "question": "How do you create a function in JavaScript?",
+      "ans1":"function = myFunction()",
+      "ans2":"function myFunction()",
+      "ans3":"function:myFunction()",
+      "ans4":"myFunction()",
+      "rightAns":"2"
+    },{
+      "question": "How do you call a function named 'myFunction?",
+      "ans1":"myFunction()",
+      "ans2":"call myFunction()",
+      "ans3":"call function myFunction()",
+      "ans4":"myFunction",
+      "rightAns":"1"
+    },{
+      "question": "How to write an IF statement in JavaScript?",
+      "ans1":"if i = 5",
+      "ans2":"if i = 5 then",
+      "ans3":"if (i == 5)",
+      "ans4":"if i == 5 then",
+      "rightAns":"3"
+    },{
+      "question": "How to write an IF statement for executing some code if 'i' is NOT equal to 5?",
+      "ans1":"if (i &#60;&#62; 5)",
+      "ans2":"if i &#60;&#62; 5",
+      "ans3":"if (i != 5)",
+      "ans4":"if i =! 5 then",
+      "rightAns":"3"
+    },{
+      "question": "How does a WHILE loop start?",
+      "ans1":"while (i &#60;= 10)",
+      "ans2":"while i = 1 to 10",
+      "ans3":"while (i &#60;= 10; i++)",
+      "ans4":"while i &#60;= 10",
+      "rightAns":"1"
+    },{
+      "question": "How does a FOR loop start?",
+      "ans1":"for (i = 0; i &#60;= 5)",
+      "ans2":"for (i = 0; i &#60;= 5; i++)",
+      "ans3":"for (i &#60;= 5; i++)",
+      "ans4":"for i = 1 to 5",
+      "rightAns":"1"
+    },{
+      "question": "How can you add a comment in a JavaScript?",
+      "ans1":"&#60;!--This is a comment--&#62;",
+      "ans2":"'This is a comment",
+      "ans3":"&#47;&#47;This is a comment",
+      "ans4":"*This is a comment",
+      "rightAns":"3"
+    },{
+      "question": "How to insert a comment that has more than one line?",
+      "ans1":"&#47;&#47;This comment has more than one line&#47;&#47;",
+      "ans2":"&#47;*This comment has more than one line*&#47;",
+      "ans3":"&#60;!--This comment has more than one line--&#62;",
+      "ans4":"*&#47;This comment has more than one line*&#47;",
+      "rightAns":"2"
+    },{
+      "question": "What is the correct way to write a JavaScript array?",
+      "ans1":"var colors = ['red', 'green', 'blue']",
+      "ans2":"var colors = (1:'red', 2:'green', 3:'blue')",
+      "ans3":"var colors = 1 = ('red'), 2 = ('green'), 3 = ('blue')",
+      "ans4":"var colors = 'red', 'green', 'blue'",
+      "rightAns":"1"
+    },{
+      "question": "How do you round the number 7.25, to the nearest integer?",
+      "ans1":"rnd(7.25)",
+      "ans2":"round(7.25)",
+      "ans3":"Math.round(7.25)",
+      "ans4":"Math.rnd(7.25)",
+      "rightAns":"3"
+    },{
+      "question": "How do you find the number with the highest value of x and y?",
+      "ans1":"Math.ceil(x, y)",
+      "ans2":"ceil(x, y)",
+      "ans3":"Math.max(x, y)",
+      "ans4":"top(x, y)",
+      "rightAns":"3"
+    },{
+      "question": "What is the correct JavaScript syntax for opening a new window called 'w2'?",
+      "ans1":"w2 = window.open('http:&#47;&#47;www.w3schools.com');",
+      "ans2":"w2 = window.new('http:&#47;&#47;www.w3schools.com');",
+      "ans3":"w2 = window.newTab('http:&#47;&#47;www.w3schools.com');",
+      "ans4":"w2 = window.openNew('http:&#47;&#47;www.w3schools.com');",
+      "rightAns":"1"
+    },{
+      "question": "How can you detect the client's browser name?",
+      "ans1":"client.navName",
+      "ans2":"navigator.appName",
+      "ans3":"browser.name",
+      "ans4":"get.name",
+      "rightAns":"2"
+    },{
+      "question": "Which event occurs when the user clicks on an HTML element?",
+      "ans1":"onclick",
+      "ans2":"onmouseclick",
+      "ans3":"onchange",
+      "ans4":"onmouseover",
+      "rightAns":"1"
+    },{
+      "question": "How do you declare a JavaScript variable?",
+      "ans1":"v carName;",
+      "ans2":"var carName;",
+      "ans3":"variable carName;",
+      "ans4":"vr carName;",
+      "rightAns":"2"
+    },{
+      "question": "Which operator is used to assign a value to a variable?",
+      "ans1":"-",
+      "ans2":"=",
+      "ans3":"*",
+      "ans4":"x",
+      "rightAns":"2"
+    },{
+      "question": "What will the following code return: Boolean(10 &#62; 9)",
+      "ans1":"true",
+      "ans2":"NaN",
+      "ans3":"false",
+      "ans4":"undefined",
+      "rightAns":"1"
+    }
+  ]
+}

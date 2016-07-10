@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" sizes="196x196" href="question.png">
+    <title>javaScriptKnowledgeQuiz</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"
+            type="application/javascript"></script>
+    <!--<script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js" type="application/javascript"></script>-->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"
+            type="application/javascript"></script>
+    <link href="jsQuiz.css" rel="stylesheet" type="text/css">
+    <script src="jsQuiz.js" rel="script" type="application/javascript"></script>
+</head>
+<body>
+<div data-role="page" style="text-align: center" id="page">
+    <div data-role="header" data-theme="b">
+        <h1>javaScript Knowledge Quiz</h1>
+    </div>
+
+    <div data-role="content">
+        <p id="qIntro" class="ui-content ui-body-b ui-corner-all">
+            Test your skills in JavaScript
+        </p>
+        <button id="bStart" onclick="Quiz.getQuestionsFromJson()" class="ui-btn ui-btn-inline ui-btn-corner-all">Start
+            Now!
+        </button>
+
+        <div id="bQuestion" style="display: none;">
+            <p class="ui-content ui-body-b ui-corner-all" id="qQuestion"></p>
+            <form name="bAnswers" id="bAnswers" data-role="controlgroup">
+                <input class="answer" id="qAns1" type="radio" value="1" name="answer"/>
+                <label id="qAns1Lbl" for="qAns1"></label>
+                <input class="answer" id="qAns2" type="radio" value="2" name="answer"/>
+                <label id="qAns2Lbl" for="qAns2"></label>
+                <input class="answer" id="qAns3" type="radio" value="3" name="answer"/>
+                <label id="qAns3Lbl" for="qAns3"></label>
+                <input class="answer" id="qAns4" type="radio" value="4" name="answer"/>
+                <label id="qAns4Lbl" for="qAns4"></label>
+            </form>
+            <div>
+                <span id="qTimer">0</span>
+                <span id="qCounter"></span>
+                <br>
+            </div>
+
+
+            <button id="bNext" onclick="Quiz.userClickNext()" class="ui-btn ui-btn-inline ui-btn-corner-all">Next
+            </button>
+        </div>
+    </div>
+    <div data-position-to="window" data-role="popup" id="noCheckPopup" data-overlay-theme="b" data-theme="b"
+         style="min-width:250px; min-height: 100px">
+        <a href="#" data-rel="back"
+           class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+        <div data-role="header">
+            <h1>No Answer?</h1>
+        </div>
+        <div data-role="main">
+            <p>take a guess...</p>
+        </div>
+    </div>
+    <div data-position-to="window" data-role="popup" id="resultPopup" data-overlay-theme="b" data-theme="b"
+         style="min-width:250px; min-height: 100px">
+        <a href="#" data-rel="back"
+           class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+        <div data-role="header">
+            <h1>Score</h1>
+        </div>
+        <div data-role="main">
+            <p>Your Score is:</p>
+            <p id="bScore"></p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
